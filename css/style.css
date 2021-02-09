@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+.overview-blocks,
+.cards-stats-one,
+header{
+    transition: all 1s ease-in-out;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.container header{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    background: hsl(225, 100%, 98%);
+    padding: 0 150px;
+}
+
+
+
+.container header .title{
+    font-family: 'Inter', sans-serif;
+}
+
+.container header .title p{
+    font-weight: 700;
+    font-size: 12px;
+    color: #63687e;
+}
+
+.container header .switch-theme{
+    display: flex;
+    justify-content: space-between;
+    width: 115px;
+    font-family: 'Inter', sans-serif;
+    color: #63687e;
+    font-size: 12px;
+    align-items: center;
+}
+
+.container header .switch-theme .button-switcher{
+    background: linear-gradient(#378fe6,#3eda82) ;
+    width: 45px;
+    height: 20px;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.container header .switch-theme .button-switcher .switch{
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    position: absolute;
+    top: 11%;
+    right: 5%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px #ffffff55;
+    transition: all .8s ease;
+}
+
+.switch-dark{
+    left: 5%;
+}
+
+.container main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.container main .cards-stats-one{
+    background: #f0f2fa;
+    width: 250px;
+    border-radius: 0 0 10px 10px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-stats-dark{
+    background: hsl(228, 28%, 20%) !important;
+}
+
+.text-color{
+    color: #fff;
+}
+
+.container main .cards-stats-one:hover
+{
+    background: #aeb3cb;
+}
+
+.container main .cards-stats-one .social-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.container main .cards-stats-one .social-name p{
+    margin: 0 0 0 15px;
+    color: #63687e;
+    font-size: 14px;
+}
+
+.container main .cards-stats-one .followers-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container main .cards-stats-one .followers-card h1{
+    font-size: 48px;
+}
+
+.container main .cards-stats-one .followers-card p{
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: #63687e;
+}
+
+.container main .cards-stats-one .percent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container main .cards-stats-one .percent p{
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.container main .facebook{
+    border-top: 2px solid #198ff5;
+}
+.container main .twitter{
+    border-top: 2px solid#1ca0f2;
+}
+.container main .instagram{
+    border-top: 2px solid #df4996;
+}
+.container main .youtube{
+    border-top: 2px solid #c4032a;
+}
+
+.container .title-overview{
+    width: 80%;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+}
+
+.container article {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container article .social-overview-1,
+.container article .social-overview-2{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.container article .social-overview-1 .overview-blocks header,
+.container article .social-overview-2 .overview-blocks header{
+    width: 60%;
+    background: #fff;
+}
+.container article .social-overview-1 .overview-blocks header p,
+.container article .social-overview-2 .overview-blocks header p{
+    font-size: 12px;
+    color: #63687e;
+    font-weight: 700;
+}
+
+.container article .social-overview-1 .overview-blocks,
+.container article .social-overview-2 .overview-blocks {
+    width: 250px;
+    height: 100px;
+    background: #f0f2fa;
+    border-radius: 10px;
+}
+
+.container article .social-overview-1 .overview-blocks header,
+.container article .social-overview-2 .overview-blocks header{
+    height: 50px;
+    padding: 0;
+    background: #f0f2fa;
+}
+
+.container article .social-overview-1 .overview-blocks main,
+.container article .social-overview-2 .overview-blocks main{
+    height: 50px;
+}
+
+.container article .social-overview-1 .overview-blocks main .stats-overview,
+.container article .social-overview-2 .overview-blocks main .stats-overview{
+    display: flex;
+    align-items: center;
+}
+
+.header-blocks{
+    background: hsl(228, 28%, 20%) !important;
+}
+
+.overview-blocks-dark{
+    background: hsl(228, 28%, 20%) !important;
+}
+
+.header-dark{
+    background: hsl(232, 19%, 15%) !important;
+}
+/*CORES*/
+
+.green {
+    color: hsl(163, 72%, 41%);
+    font-size: 12px;
+    margin: 0 0 0 5px;
+}
+
+.red {
+    color: hsl(356, 69%, 56%);  
+    font-size: 12px;
+    margin: 0 0 0 5px;
+}
+
+
+@media screen and (max-width: 1250px){
+    .container main {
+        margin-top: 50px;
+    }
+
+    .container .title-overview{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container main .cards-stats-one{
+        margin: 10px 5px;
+    }
+    .container article .social-overview-1,
+    .container article .social-overview-2{
+        justify-content: center;
+    }
+    .container article .social-overview-1 .overview-blocks,
+    .container article .social-overview-2 .overview-blocks{
+        margin: 15px 5px;
+        height: 120px;
+    }
+    .container article .social-overview-1 .overview-blocks header,
+    .container article .social-overview-2 .overview-blocks header{
+        height: 30px;
+        margin-top: 25px;
+    }   
+    .container article .social-overview-1 .overview-blocks main,
+    .container article .social-overview-2 .overview-blocks main{
+        height: 30px;
+        margin-top: 25px;
+    }  
+}
